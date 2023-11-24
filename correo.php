@@ -6,10 +6,8 @@
      $asunto = $_POST['Asunto'];
      $mensaje = $_POST['Mensaje'];
 
-     $header"Enviado desde sitio web www.ezcosmetologa.com.ar";
-     $mensajecompleto = $mensaje . "\nAtentamente: " . $nombre;
-
-     mail($destinatario, $asunto, $mensajecompleto, $header);
+     $contenido = "Nombre: " . $nombre . "\nEmail: " . $email "\nTeléfono: " . $telefono . "\nAsunto: " . $asunto . "\nMensaje: " . $mensaje;
+     mail($destinatario, "Contacto", $contenido);
      header("Location:gracias.html");
 
 
