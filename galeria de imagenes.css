@@ -1,0 +1,16 @@
+
+.image-gallery {
+    text-align: center;
+    padding: 50px 20px; 
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+}
+
+.gallery-container img {
+    max-width: 100%;
+    border-radius: 5px; 
+}
