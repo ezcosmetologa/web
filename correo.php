@@ -10,9 +10,7 @@
      $mensajecompleto = $mensaje . "\nAtentamente: " . $nombre;
 
      mail($destinatario, $asunto, $mensajecompleto, $header);
-     echo "<script>alert('Correo Enviado Exitosamente')</script>";
-     echo "<script>setTimeout(\"location.herf= 'index.html'\",1000)</script>";
+     header("Location:gracias.html");
 
 
      ?>
-
