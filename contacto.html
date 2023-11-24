@@ -70,30 +70,30 @@
     </style>
 </head>
 <body>
-
+    <div class="header">
+        <a href="gracias.html"></a>
+    </div>
+    <form action="correo.php" method="post">
     <h2>Formulario de Contacto</h2>
 
     <P> </P>
     
-    <form action="#" method="post">
-        <label for="nombre">NOMBRE:</label>
-        <input type="text" id="nombre" name="nombre" required>
+        <input type="text" placeholder="Nombre" name="nombre" required>
 
-        <label for="email">CORREO ELECTRÓNICO:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" placeholder="Email" name="email" required>
 
-        <label for="telefono">TELEFONO:</label>
-        <input type="number" id="asunto" name="telefono" required>
+        <input type="number" placeholder="Telefono" name="telefono" required>
 
-        <label for="asunto">ASUNTO:</label>
-        <input type="text" id="asunto" name="asunto" required>
+        <input type="text" placeholder="Asunto" name="asunto" required>
 
-        <label for="mensaje">MENSAJE:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        <textarea name="mensaje" placeholder="Escriba aquí su mensaje" rows="4" required></textarea>
 
-        <button type="submit">Enviar</button>
+        <div class="botones">
+            <input type="submit" value="Enviar" id="boton">
+
+        </div>
     </form>
-</div>
+</body>
 
     <section>
         <div class="hero-content">
@@ -114,7 +114,7 @@
 
         <div class="footer-column">
             
-            <img src="img/LogoEmpresa.png" alt="Logo de la empresa" style="position: absolute; left: 50px; bottom: -1px; width: 210px;">
+            <img src="img/LogoEmpresa.png" alt="Logo de la empresa" style="position: absolute; left: 50px; bottom: 117px; width: 210px;">
         </div>
         <div class="footer-column" style="position: relative; right: 200px; bottom: 25px;">
             
@@ -153,4 +153,3 @@
 </body>
 
 </html>
-
